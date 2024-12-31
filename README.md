@@ -23,10 +23,10 @@ Before building and running the project, make sure you have the following librar
 To install the required dependencies on **Arch Linux**, use the following commands:
 
 ```bash
-sudo pacman -Syu          # Update your system
-sudo pacman -S glfw-x11    # Install GLFW
-sudo pacman -S glu         # Install OpenGL utilities (GLU)
-sudo pacman -S glew        # Install GLEW (OpenGL Extension Wrangler)
+sudo pacman -Syu
+sudo pacman -S glfw-x11
+sudo pacman -S glu
+sudo pacman -S glew
 ```
 
 If **GLAD** is not available via `pacman`, you can manually install it by following the steps below.
@@ -47,15 +47,7 @@ If **GLAD** is not available via `pacman`, you can manually install it by follow
    make
    sudo make install
    ```
-
-### **Building the Project**
-
-1. **Clone this repository**:
-
-   ```bash
-   git clone https://github.com/yourusername/3d-rgb-letters.git
-   cd 3d-rgb-letters
-   ```
+1. **Clone the rep**
 
 2. **Create a build directory**:
 
@@ -79,35 +71,15 @@ If **GLAD** is not available via `pacman`, you can manually install it by follow
 5. **Run the program**:
 
    ```bash
-   ./3D_Letters
+   ./world.cpp
    ```
-
-### **Running the Program**
-After following the steps above, the program should open a window with the 3D letters "ytext" displayed. The letters will rotate and change colors smoothly in real-time.
-
----
 
 ## **Project Structure**
 
 ```text
-3d-rgb-letters/
+World/
 │
 ├── CMakeLists.txt        # Build configuration file
-├── main.cpp              # C++ source code for rendering
+├── world.cpp              # C++ source code for rendering
 └── README.md             # Project documentation
 ```
-
----
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-### **Acknowledgments**
-- **OpenGL**: A powerful graphics API used for rendering the 3D objects.
-- **GLFW**: A library to handle window creation and user input.
-- **GLAD**: An OpenGL loader for managing OpenGL functions.
-
----
