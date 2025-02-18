@@ -36,7 +36,7 @@ If **GLAD** is not available via `pacman`, you can manually install it by follow
 1. Clone the GLAD repository:
 
    ```bash
-   git clone https://github.com/sudoytext/Open-World.git
+   git clone https://github.com/Dav1dde/glad.git
    cd glad
    ```
 
